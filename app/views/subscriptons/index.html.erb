@@ -1,0 +1,31 @@
+<h1>Listing Subscriptons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Book</th>
+      <th>Subscriber</th>
+      <th>Length of subscription</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @subscriptons.each do |subscripton| %>
+      <tr>
+        <td><%= subscripton.book.title %></td>
+        <td><%= subscripton.subscriber.name %></td>
+        <td><%= subscripton.length %></td>
+        <td><%= link_to 'Show', subscripton %></td>
+        <td><%= link_to 'Edit', edit_subscripton_path(subscripton) %></td>
+        <td><%= link_to 'Destroy', subscripton, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Subscripton', new_subscripton_path %> |
+<%= link_to 'New Subscriber', new_subscriber_path %> |
+<%= link_to 'New Book', new_book_path %>
