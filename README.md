@@ -9,3 +9,4 @@ To see the app, please run with rails installed:
   
 After you run the server and visit localhost on your machine. You will be able to look at this sample.
 
+The app models a magazine subscription model. Subscribers have books and those are tracked in the subscription model by how long that person subscribes to a particular book.
