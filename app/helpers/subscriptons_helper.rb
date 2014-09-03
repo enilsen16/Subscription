@@ -1,0 +1,2 @@
+module SubscriptonsHelper
+end

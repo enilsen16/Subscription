@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @subscripton.book.title %>
+</p>
+
+<p>
+  <strong>Subscriber:</strong>
+  <%= @subscripton.subscriber.name %>
+</p>
+
+<p>
+  <strong>Length of subscription:</strong>
+  <%= @subscripton.length %>
+</p>
+
+<%= link_to 'Edit', edit_subscripton_path(@subscripton) %> |
+<%= link_to 'Back', subscriptons_path %>
